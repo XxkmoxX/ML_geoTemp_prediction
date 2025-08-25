@@ -10,21 +10,20 @@ This project aims to predict geothermal temperatures using geochemical features 
 
 ```
 geoTemp_prediction/
-├── csv/                                           # Dataset files
+├── csv/                                          # Dataset files
 │   ├── dataset_v2.csv                            # Processed dataset v2
 │   └── final_dataset.csv                         # Final cleaned dataset
 │
 ├── notebooks/
 │   ├── EDA_geoTemp_prediction.ipynb              # Exploratory Data Analysis
 │   ├── PCA_geoTemp_prediction.ipynb              # Principal Component Analysis
-│   ├── ML_regression1_geoTemp_prediction.ipynb   # Tree-based models: Decision Tree, Random Forest, XGBoost
-│   ├── ML_regression2_geoTemp_prediction.ipynb   # Neural Networks: MLP, NN Keras
-│   ├── ML_regression3_geoTemp_prediction.ipynb   # Advanced models: TabPFN
+│   ├── ML_regression1_geoTemp_prediction.ipynb   # Tree-based models: Decision Tree, Random Forest, XGBoost and advanced model: TabPFN
+│   ├── ML_regression2_geoTemp_prediction.ipynb   # Neural Networks: MLP, NN TensorFlow Keras
 │   ├── metrics_comparison.ipynb                  # Comprehensive model comparison
-│   └── models_performance_analysis.ipynb         # Performance analysis and visualizations
+│   └── models_performance_analysis.ipynb         # Model comparison and performance analysis
 │
 ├── models/                                        # Saved model files
-├── metrics/                                       # Model evaluation metrics (CSV files)
+├── metrics/                                       # Model evaluation metrics (csv files)
 ├── plots/                                         # Generated visualization plots
 └── README.md                                      # Project documentation
 ```
@@ -33,10 +32,12 @@ geoTemp_prediction/
 
 - **Comprehensive Data Analysis**: Detailed exploratory data analysis with statistical insights and visualizations
 - **Dimensionality Reduction**: Principal Component Analysis (PCA) for feature optimization
-- **Multiple ML Approaches**: 
-  - Tree-based models (Decision Tree, Random Forest, XGBoost)
-  - Neural Networks (Multi-layer Perceptron, Keras NN)
-  - Advanced ensemble methods (TabPFN)
+- **Multiple Machine Learning Approaches**: 
+  - Tree-based models: Decision Tree, Random Forest
+  - Gradient boosting method: XGBoost
+  - Advanced ensemble methods: TabPFN
+  - Neural Networks: Multi-layer Perceptron, Neural Network TensorFlow Keras
+
 - **Model Comparison**: Systematic evaluation and comparison of all models
 - **Performance Visualization**: Interactive plots and comprehensive metrics analysis
 - **Automated Metrics**: R², MSE, MAE, MSLE, MRSE, and training time tracking
@@ -45,12 +46,12 @@ geoTemp_prediction/
 
 ### 1. Tree-Based Models
 - **Decision Tree**: Simple interpretable regression tree
-- **Random Forest**: Ensemble of decision trees with bagging
+- **Random Forest**: Ensemble of decision trees
 - **XGBoost**: Gradient boosting with advanced optimization
 
 ### 2. Neural Networks
 - **Multi-layer Perceptron (MLP)**: Traditional feedforward neural network
-- **Keras Neural Network**: Deep learning model using TensorFlow/Keras
+- **Keras Neural Network**: Deep learning model using TensorFlow Keras neural network
 
 ### 3. Advanced Methods
 - **TabPFN**: Prior-fitted Networks for tabular data (state-of-the-art)
@@ -116,9 +117,8 @@ jupyter notebook
    - Optimize feature selection
 
 3. **Model Training**: Execute the regression notebooks in order:
-   - `ML_regression1_geoTemp_prediction.ipynb` - Tree-based models
+   - `ML_regression1_geoTemp_prediction.ipynb` - Tree-based, gradient boosting (XGBoost) and advanced method (TabPFN).
    - `ML_regression2_geoTemp_prediction.ipynb` - Neural networks
-   - `ML_regression3_geoTemp_prediction.ipynb` - Advanced methods
 
 4. **Model Comparison**: Use comparison notebooks for evaluation:
    - `metrics_comparison.ipynb` - Compare all model metrics
@@ -177,6 +177,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-- **Author**: XxkmoxX
+- **Author**: Cristian Picighelli
 - **Repository**: [ML_geoTemp_prediction](https://github.com/XxkmoxX/ML_geoTemp_prediction)
 - **Issues**: Please report bugs and feature requests through GitHub Issues
