@@ -4,39 +4,36 @@ A machine learning project for predicting geothermal temperatures using various 
 
 ## Project Overview
 
-This project aims to predict geothermal temperatures using geochemical data. It includes comprehensive data analysis, multiple machine learning approaches, and model evaluation.
+This project aims to predict geothermal temperatures using geochemical features. It includes comprehensive data analysis, multiple machine learning approaches, and models evaluation.
 
 ## Project Structure
 
 ```
 ├── csv/                          # Dataset files
-│   ├── dataset_GDR_raw.csv       # Raw dataset
 │   ├── dataset_v2.csv            # Processed dataset v2
 │   ├── final_dataset.csv         # Final cleaned dataset
-│   └── back/                     # Backup dataset versions
+│
 ├── notebooks/
-│   ├── data_cleaning_geothermal_GDR.ipynb    # Data cleaning and preprocessing
-│   ├── EDA_geoTemp_prediction.ipynb          # Exploratory Data Analysis
-│   ├── PCA_geoTemp_prediction.ipynb          # Principal Component Analysis
-│   ├── ML_regression1_geoTemp_prediction.ipynb  # Regression models - Part 1
-│   ├── ML_regression2_geoTemp_prediction.ipynb  # Regression models - Part 2
-│   ├── ML_regression3_geoTemp_prediction.ipynb  # Regression models - Part 3
-│   └── ml_nn-keras_temp_prediction.ipynb     # Neural Network models
-├── lightgbm-regression-project/   # LightGBM implementation
+│   ├── data_cleaning_geothermal_GDR.ipynb          # Data cleaning and preprocessing
+│   ├── EDA_geoTemp_prediction.ipynb                # Exploratory Data Analysis
+│   ├── PCA_geoTemp_prediction.ipynb                # Principal Component Analysis
+│   ├── ML_regression1_geoTemp_prediction.ipynb     # Regression models: Desicion Tree, Random Forest, XGBoost and TABPFN
+│   ├── ML_regression2_geoTemp_prediction.ipynb     # Regression models: Neural networks: MLP, NN TensorFlow Keras, NN PyTorch
+│   ├── ML_regression3_geoTemp_prediction.ipynb     # Regression models: Linear and GLM
+│  
 ├── models/                       # Saved model files
 └── metrics/                      # Model evaluation metrics
 ```
 
 ## Features
 
-- **Data Preprocessing**: Comprehensive data cleaning and feature engineering
-- **Exploratory Data Analysis**: In-depth analysis of geochemical data patterns
+- **Data Preprocessing**: Comprehensive data cleaning and feature engineering.
+- **Exploratory Data Analysis**: In-depth analysis of geochemical data patterns.
 - **Multiple ML Models**: 
-  - Linear Regression
-  - Random Forest
-  - Support Vector Regression
-  - LightGBM
-  - Neural Networks (Keras)
+  - Desicion tree and Random forest
+  - XGBoost and TabPFN
+  - Neural networks: MLP, NN Keraas TensorFlow, NN PyTorch
+
 - **Dimensionality Reduction**: PCA analysis
 - **Model Evaluation**: Comprehensive metrics and visualization
 
@@ -69,11 +66,9 @@ This project aims to predict geothermal temperatures using geochemical data. It 
 
 ## Usage
 
-1. Start with data cleaning: `data_cleaning_geothermal_GDR.ipynb`
-2. Explore the data: `EDA_geoTemp_prediction.ipynb`
-3. Run PCA analysis: `PCA_geoTemp_prediction.ipynb`
-4. Train regression models: `ML_regression1/2/3_geoTemp_prediction.ipynb`
-5. Experiment with neural networks: `ml_nn-keras_temp_prediction.ipynb`
+1. Start with exploratory data analisys: `EDA_geoTemp_prediction.ipynb`
+2. Run PCA analysis: `PCA_geoTemp_prediction.ipynb`
+4. Experiment and train regression models: `ML_regression1/2/3_geoTemp_prediction.ipynb`
 
 ## Results
 
