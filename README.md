@@ -157,26 +157,8 @@ The project provides comprehensive evaluation of various machine learning approa
 
 All results are automatically saved in the `metrics/` directory and visualizations in the `plots/` directory.
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Thanks to the geochemical research community for data insights
-- Inspired by advances in machine learning for geothermal energy applications
-- Built with open-source machine learning libraries
-
 ## Contact
 
-- **Author**: Cristian Picighelli
+- **Author**: Cristian Picighelli (c.picighelli@gmail.com)
 - **Repository**: [ML_geoTemp_prediction](https://github.com/XxkmoxX/ML_geoTemp_prediction)
 - **Issues**: Please report bugs and feature requests through GitHub Issues
